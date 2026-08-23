@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("https://aidansm2103.github.io/Portfolio/")
+        policy.WithOrigins("https://aidansm2103.github.io")
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
