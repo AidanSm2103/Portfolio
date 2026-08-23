@@ -17,8 +17,8 @@ public class CipherService
                 Title = "Entry No. 001",
                 Shift = 3,
                 PlainText = "the archive remembers what you forget",
-                RewardMessage = "You cracked it. If you're reading this, you're either a recruiter who's thorough or a friend who's nosy — either way, hi. I'm Aidan, and I build things properly, even the parts nobody's meant to see.",
-                Hint = "It's a Caesar cipher — each letter is shifted forward in the alphabet by the same amount. Try shifting back."
+                RewardMessage = "You cracked it! Since you made it this far you must be a thorough recruiter so here's <a href=\"files/Aidan_Smith_CV.pdf\" target=\"_blank\">my CV</a>. I build things properly, even the parts nobody's meant to see.",
+                Hint = "It's a Caesar cipher — each letter is shifted forward in the alphabet by 3 positions in the alphabet. Try shifting back 3 positions. (e.g. 'd' becomes 'a')"
             }
         };
 
