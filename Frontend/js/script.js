@@ -1,4 +1,4 @@
-const API_BASE = "https://cipherjournal.onrender.com"; // update this once deployed
+const API_BASE = "https://cipherjournal.onrender.com"; 
 
 async function loadCipherPanel() {
   const panel = document.getElementById("cipher-panel");
