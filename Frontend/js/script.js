@@ -6,7 +6,7 @@ async function loadCipherPanel() {
   try {
     const res = await fetch(`${API_BASE}/entries`);
     const entries = await res.json();
-    const entry = entries[0]; // just the first entry for now
+    const entry = entries[0]; 
 
     panel.innerHTML = `
       <p class="encoded-text">${entry.encodedText}</p>
