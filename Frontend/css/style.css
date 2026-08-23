@@ -4,6 +4,7 @@
   --accent: #F7A72C;
   --accent-2: #6C5CE7;
   --text: #eaeaea;
+  --text-muted: #9a9aa5;
 }
 
 * {
@@ -20,13 +21,37 @@ body {
 }
 
 header {
-  padding: 3rem 1.5rem;
+  padding: 3rem 1.5rem 1.5rem;
   text-align: center;
   border-bottom: 1px solid var(--accent-2);
 }
 
 header h1 {
   color: var(--accent);
+}
+
+.tagline {
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 main {
@@ -36,17 +61,88 @@ main {
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 section h2 {
   color: var(--accent-2);
   margin-bottom: 0.75rem;
+  border-bottom: 1px solid #2a2a3d;
+  padding-bottom: 0.5rem;
+}
+
+.section-intro {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  background: var(--bg-panel);
+  border: 1px solid #2a2a3d;
+  border-radius: 6px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-card h3 {
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.project-tags {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.project-card a {
+  color: var(--accent-2);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+#cipher-panel {
+  background: var(--bg-panel);
+  border: 1px dashed var(--accent-2);
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.placeholder-note {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.contact-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-links a {
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-links a:hover {
+  background: var(--accent);
+  color: var(--bg);
 }
 
 footer {
   text-align: center;
   padding: 1.5rem;
-  color: #888;
+  color: var(--text-muted);
   font-size: 0.85rem;
 }

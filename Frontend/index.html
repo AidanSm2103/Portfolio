@@ -10,27 +10,78 @@
   <header>
     <h1>Aidan Smith</h1>
     <p class="tagline">Software Engineering Student</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#cipher-journal">Cipher Journal</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
     <section id="about">
       <h2>About</h2>
-      <p>Placeholder — bio goes here.</p>
+      <p>
+        I'm a Software Engineering student at Belgium Campus ITversity, currently
+        working through my Bachelor of Computing (2024–2027). I like building things end-to-end 
+        from layered structure and repository patterns, all the way to tests.
+      </p>
+      <p>
+        I usually take on a coordination role in group
+        projects like structuring team setup, workflows, and keeping things on
+        track. All of this while building personal projects on the side to practice patterns
+        I don't always get to touch in class.
+      </p>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <p>Placeholder — Evidence Locker, Mystic Museum, etc.</p>
+
+      <article class="project-card">
+        <h3>Evidence Locker</h3>
+        <p class="project-tags">C# · .NET 8 · Layered Architecture · xUnit</p>
+        <p>
+          A cold-case management system built to demonstrate real OOP and
+          architecture fundamentals. Structured with a full layered
+          architecture, the repository
+          pattern with generic and case-specific interfaces, JSON-based
+          persistence, and evidence chain-of-custody tracking. Core logic is
+          covered by xUnit tests validating CRUD operations and business rules.
+        </p>
+        <a href="https://github.com/AidanSm2103/Evidence_Locker" target="_blank">View on GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Mystic Museum</h3>
+        <p class="project-tags">Node.js · Express · EJS · MongoDB</p>
+        <p>
+          A narrative-driven, interactive website rebuilt into a full-stack
+          application, featuring a server-side scavenger hunt that
+          progressively unlocks content and visually degrades the UI as you
+          go — built with a focus on front-end fundamentals, state
+          persistence, and atmospheric design.
+        </p>
+        <a href="https://github.com/AidanSm2103/Mystic_Museum" target="_blank">View on GitHub →</a>
+      </article>
     </section>
 
     <section id="cipher-journal">
       <h2>The Cipher Journal</h2>
-      <p>Placeholder — cipher puzzle panel goes here.</p>
+      <p class="section-intro">
+        A small encoded entry is hidden below. Crack it to reveal something extra.
+      </p>
+      <div id="cipher-panel">
+        <p class="placeholder-note">Cipher panel coming soon — API in progress.</p>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Placeholder — links go here.</p>
+      <ul class="contact-links">
+        <li><a href="mailto:aidansm2103@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/aidan-smith-85714136a/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/AidanSm2103" target="_blank">GitHub</a></li>
+      </ul>
     </section>
   </main>
 
